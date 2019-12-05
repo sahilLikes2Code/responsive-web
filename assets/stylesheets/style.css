@@ -192,7 +192,7 @@ body {
 }
 
 .banner h1 {
-    width: 55%;
+    /* width: 55%; */
     margin: 0 auto;
     line-height: 1.5;
     font-weight: bold;
@@ -334,8 +334,8 @@ th, td {
     justify-content: center;
 }
 .col-1-3 {
-    width: 20%;
-    padding-left: 2px;
+    /* width: 20%; */
+    padding-left: 30px;
     line-height: 1.5;
 }
 .icons {
@@ -362,13 +362,14 @@ th, td {
     .nav-bar {
         flex-direction: column;
         justify-content: center;
-        /* display: none; */
+         display: none;
     }
     #toggle:checked + .nav-bar {
         display: flex;
     }
     .banner h1{
         width: 70%;
+
     }
     .image-gallery {
         width: 100%;
@@ -398,6 +399,14 @@ th, td {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+    }
+    .two-colums {
+        width: 70%;
+    }
+    .col-1-3 {
+        display: block;
+        width: 80%;
+        font-size: 20px;
     }
     .container-for-3divs h4 {
         /* width: 100%; */
