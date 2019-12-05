@@ -1,0 +1,414 @@
+CSS reset Eric Meyers
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*====================
+Custom CSS Begins here
+====================*/
+
+/*-------------------General--------------------------*/
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+/* ------Headings------ */
+
+.para-text {
+    font-size: 12px;
+}
+
+.h1 {
+    font-size: 46px;
+}
+
+.h2 {
+    font-size: 35px;
+}
+
+.h3 {
+    font-size: 22px;
+}
+
+.h4 {
+    font-size: 15px;
+}
+/* ------Colors------ */
+.text-color-cream {
+    color: rgb(223, 245, 225);
+}
+
+.text-color-white {
+    color: white;
+}
+
+.text-color-black {
+    color: black;
+}
+.text-color-pink {
+    color:rgb(232,99,120)    ;
+}
+
+.text-color-navy-blue {
+    color: rgb(46, 64, 82);
+}
+
+.text-color-light-blue {
+    color: rgb(96, 125, 156);
+}
+.text-green {
+    color: rgb(91,188,156);
+}
+.bg-white {
+    background-color: white;
+}
+.bg-light-grey {
+    background-color: rgb(189,199,210);
+}
+.bg-navy-blue {
+    background-color: rgb(43,51,70);
+}
+.bg-light-blue {
+    background-color: rgb(43,51,70);
+}
+.bg-lightest-blue {
+    background-color: rgb(50,60,80);
+}
+
+/* ------Padding, dimensions, etc------ */
+
+.button {
+    display: block;
+    width: 146px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.sections-padding {
+    padding: 102px 0 112px 0;
+}
+
+.text-decor-none {
+    text-decoration: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+.bold {
+    font-weight: bold;
+}
+.padding-bottom-10 {
+    padding-bottom: 10px;
+}
+.marg-bottom-20 {
+    margin-bottom: 20px;
+}
+/* --------Display------------- */
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/*----------------------------Specific--------------------------------*/
+
+/*-------------------Header--------------------------*/
+
+.header {
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(44, 62, 80, 0.9);
+    height: 70px;
+}
+
+.nav-bar {
+    position: absolute;
+    right: 19%; 
+    /* display: flex; */
+}
+
+.nav-bar a {
+    color: ;
+    padding-left: 41px;
+    font-weight: 900;
+}
+
+.logo {
+    height: 28px;
+    position: absolute;
+    left: 16%;
+}
+
+/*-------------------Banner--------------------------*/
+
+.banner {
+    background: linear-gradient(to top, rgb(78, 162, 127), rgb(44, 74, 86));
+}
+
+.banner h1 {
+    width: 55%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.banner h2 {}
+
+/*-------------------Portfolio--------------------------*/
+
+.portfolio h2 {
+    font-weight: bold;
+}
+
+.image-gallery {
+    padding: 20px 0 0 0;
+    margin: 0 auto;
+    width: 70%;
+    justify-content: center;
+    /* margin: 0 auto; */
+}
+
+.portfolio img {
+    width: 30%;
+    height: 100%;
+    margin: 1%;
+}
+
+/*-------------------About--------------------------*/
+
+.about {
+    background: linear-gradient(to top, rgb(78, 162, 127), rgb(44, 74, 86));
+}
+
+.two-colums {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    padding: 65px 0;
+}
+
+.col-1-2 {
+    padding: 0 21px;
+    line-height: 1.5;
+}
+
+.apply-button {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/*-------------------Contact--------------------------*/
+
+.contact {
+    margin: 0 auto;
+    text-align: center;    
+}
+.send-button {
+    background-color: rgb(50, 109, 94);
+    margin-left: 50px;
+}
+.form {
+    margin-top: 50px;
+    color: rgb(46, 64, 82);
+}
+::placeholder { 
+    color: rgb(176,191,206);
+    opacity: 1; 
+  }
+.form-control {
+    width: 60%;
+    border: none;
+    border-bottom: 1px solid rgb(128,151,176);
+}
+.green-button {
+    margin-top: 50px;
+    background-color: rgb(50,109,94);
+}
+
+/* .form {
+    display: block;
+    margin: 0 auto;
+}
+.form-control {
+    text-align: center;
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgb(128,151,176);
+} */
+
+/* -----------------------Map------------------ */
+
+/* .map {
+    display: flex;
+    justify-content: center;
+} */
+.map-responsive{
+    width: 80%;
+    margin: 0 auto;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+/* -----------------------Table------------------ */
+
+
+.table {
+    width: 70%;
+    margin: 0 auto;
+    line-height: 3;
+}
+
+.table-fig {
+    width: 100%;
+    margin-top: 35px;
+    text-align: left;
+}
+th, td {
+    padding-left: 10px;
+}
+
+/* -------------------Location-------------- */
+
+.location {
+    background-color: rgb(44,62,80);
+}
+.container-for-3divs {
+    margin: 0 auto;
+    /* width: 55%;  */
+    display: flex;
+    justify-content: center;
+}
+.col-1-3 {
+    width: 20%;
+    padding-left: 2px;
+    line-height: 1.5;
+}
+.icons {
+    padding-top: 20px;
+}
+/* -------------------Footer-------------- */
+
+.footer {
+    line-height: 3;
+}
+
+
+/* test */
+
+.toggleare {
+    background-color: black;
+}
+
+/* test */
+
+/* -------------------Mobile View-------------- */
+
+@media all and (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        justify-content: center;
+        /* display: none; */
+    }
+    #toggle:checked + .nav-bar {
+        display: flex;
+    }
+    .banner h1{
+        width: 70%;
+    }
+    .image-gallery {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .two-colums {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .column1 {
+        margin-bottom: 30px;
+    }
+    .contact {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;    
+    }
+    .table {
+        width: 90%;
+    }
+    .container-for-3divs {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .container-for-3divs h4 {
+        /* width: 100%; */
+    }
+    .col-1-3-one, .col-1-3-two {
+        padding-bottom: 50px;
+    }
+    .sections-padding {
+        padding: 30px 0;
+    }
+    .table {
+        padding-top: 0;
+    }
+}
